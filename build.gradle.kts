@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         classpath(GradleDeps.toolsBuildGradle)
         classpath(GradleDeps.kotlinGradlePlugin)
+        classpath(GradleDeps.navSafeArgs)
     }
 }
 

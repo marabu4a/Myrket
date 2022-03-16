@@ -3,6 +3,7 @@ plugins {
     id("kotlin-android")
     id("kotlin-parcelize")
     id("kotlin-kapt")
+    id("androidx.navigation.safeargs.kotlin")
     kotlin("android")
 }
 
@@ -48,6 +49,30 @@ dependencies {
     implementation(Deps.appCompat)
     implementation(Deps.constraintLayout)
     implementation(Deps.googleMaterial)
+    implementation(Deps.lifecycleViewmodel)
+    implementation(Deps.viewModelKtx)
+    implementation(Deps.viewpager2)
+    implementation(Deps.activityKtx)
+    implementation(Deps.fragmentKtx)
+    implementation(Deps.multiDex)
+
+    kapt(Deps.roomCompiler)
+    implementation(Deps.roomKtx)
+    implementation(Deps.roomRuntime)
+    implementation(Deps.roomGuava)
+    implementation(Deps.roomTest)
+
+    implementation(Deps.navFeature)
+    implementation(Deps.navFragment)
+    implementation(Deps.navUi)
+    implementation(Deps.navTest)
+
+    implementation(Deps.moshi)
+    implementation(Deps.retrofit)
+    implementation(Deps.okhttp)
+    implementation(Deps.okhttpInterceptor)
+
+
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.junitExt)
     androidTestImplementation(Deps.espresso)
