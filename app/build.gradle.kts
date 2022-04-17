@@ -17,8 +17,8 @@ android {
         targetSdk = ConfigVersions.targetSdkVersion
         versionCode = ConfigVersions.versionCode
         versionName = ConfigVersions.versionName
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String","TMDB_API_KEY", ConfigFields.tmdbKey)
     }
 
     buildTypes {
@@ -44,6 +44,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
     implementation(Deps.coreKtx)
     implementation(Deps.appCompat)
@@ -62,6 +66,9 @@ dependencies {
     implementation(Deps.roomGuava)
     implementation(Deps.roomTest)
 
+    implementation(Deps.hilt)
+    kapt(Deps.hiltCompiler)
+
     implementation(Deps.navFeature)
     implementation(Deps.navFragment)
     implementation(Deps.navUi)
@@ -70,6 +77,7 @@ dependencies {
     implementation(Deps.moshi)
     implementation(Deps.retrofit)
     implementation(Deps.okhttp)
+    implementation(Deps.moshiConverter)
     implementation(Deps.okhttpInterceptor)
 
 

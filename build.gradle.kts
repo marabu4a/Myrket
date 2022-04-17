@@ -7,6 +7,7 @@ buildscript {
         classpath(GradleDeps.toolsBuildGradle)
         classpath(GradleDeps.kotlinGradlePlugin)
         classpath(GradleDeps.navSafeArgs)
+        classpath(GradleDeps.hiltGradle)
     }
 }
 

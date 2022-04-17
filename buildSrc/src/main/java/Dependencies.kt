@@ -28,6 +28,7 @@ object Versions {
     const val multiDex = "2.0.1"
     const val viewModelKtx = "2.4.0"
     const val viewPager2 = "1.0.0"
+    const val hilt = "2.38.1"
 }
 
 object Deps {
@@ -53,8 +54,12 @@ object Deps {
 
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val moshi = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
+    const val moshiConverter = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
     const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
     const val okhttpInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
+
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 
     const val navFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navGraph}"
     const val navUi = "androidx.navigation:navigation-ui-ktx:${Versions.navGraph}"
@@ -70,4 +75,9 @@ object GradleDeps {
     const val toolsBuildGradle = "com.android.tools.build:gradle:${Versions.toolsBuildGradle}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val navSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navGraph}"
+    const val hiltGradle = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
+}
+
+object ConfigFields {
+    const val tmdbKey = "\"a6cc4920784ca5f0ee9534c96631634d\""
 }

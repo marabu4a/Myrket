@@ -1,11 +1,10 @@
-package com.example.myrket.ui
+package com.example.myrket.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myrket.R
 import com.example.myrket.databinding.FragmentListingBinding
 
 private const val ARG_PARAM1 = "param1"
